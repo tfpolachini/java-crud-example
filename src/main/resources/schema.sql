@@ -1,0 +1,6 @@
+CREATE TABLE produtos (
+    id INTEGER NOT NULL AUTO_INCREMENT,
+    nome VARCHAR(128) NOT NULL,
+    preco DECIMAL(10,2) NOT NULL,
+    PRIMARY KEY (id)
+);

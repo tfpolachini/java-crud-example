@@ -1,0 +1,18 @@
+spring:
+  datasource:
+    # configura um banco de dados em memória
+    url: jdbc:h2:mem:exemplo
+    username: sa
+    password: password
+    driverClassName: org.h2.Driver
+  jpa:
+    hibernate:
+    # desabilita criação das tabelas de acordo com as entidades
+      ddl-auto: none
+    database-platform: org.hibernate.dialect.H2Dialect
+    # possibilita uso dos arquivos schema.sql e data.sql para criar e popular o banco de dados
+    defer-datasource-initialization: true
+  h2:
+    console:
+    # possibilita acessar o console do H2 para executar queries
+      enabled: true
